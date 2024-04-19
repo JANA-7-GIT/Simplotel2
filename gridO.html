@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .item1 {
+        grid-area: neon;
+      }
+      .item2 {
+        grid-area: tables;
+      }
+      .item3 {
+        grid-area: shrimp;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 50% 50%;
+        gap: 5px;
+        grid-template-areas: "neon shrimp" "tables shrimp";
+        height: 50vh;
+        width: 100%;
+      }
+      .grid-container > div {
+        box-sizing: border-box;
+      }
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item item1"><img src="Neon-board.jpg" /></div>
+      <div class="grid-item item2"><img src="Tables.jpg" /></div>
+      <div class="grid-item item3"><img src="Shrimp.jpg" /></div>
+    </div>
+  </body>
+</html>
